@@ -95,7 +95,7 @@
                             </VerticalStackLayout>
                         </Grid>
                     </Border>
-                </DataTemplate>
+                </DataTemplate>GG
             </CollectionView.ItemTemplate>
         </CollectionView>
     </Grid>
