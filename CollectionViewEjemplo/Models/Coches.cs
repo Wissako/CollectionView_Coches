@@ -1,7 +1,7 @@
 ﻿
 namespace CollectionViewEjemplo.Models
 {
-    internal class Coches
+    public class Coches
     {
         public string nombreCoche {  get; set; }
         public string marcaCoche { get; set; }

@@ -7,7 +7,7 @@ namespace CollectionViewEjemplo
         public App()
         {
             InitializeComponent();
-            MainPage = new CollectionViewDemo();
+            MainPage = new NavigationPage(new Pages.CollectionViewDemo());
 
         }
 

@@ -69,4 +69,17 @@ public partial class CollectionViewDemo : ContentPage
             new Coches{nombreCoche = "Mustang", marcaCoche="Ford", Origen="America", cocheUrl="https://th.bing.com/th/id/R.bbb708f6f8ab14a0df903549cbf87cf1?rik=pZryTZOeLz4%2f0w&pid=ImgRaw&r=0"}
         };
     }
+    private async void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+       
+        var currentSelection = e.CurrentSelection.FirstOrDefault() as Coches;
+
+        if (currentSelection == null)
+            return;
+
+        await Navigation.PushAsync(new DetalleCochePage(currentSelection));
+
+    
+        ((CollectionView)sender).SelectedItem = null;
+    }
 }

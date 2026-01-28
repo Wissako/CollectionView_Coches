@@ -37,6 +37,7 @@
         <CollectionView x:Name="collectionView" 
                         Grid.Row="1"
                         SelectionMode="Single"
+                        SelectionChanged="OnSelectionChanged"
                         Margin="10">
 
             <CollectionView.ItemsLayout>
@@ -95,7 +96,7 @@
                             </VerticalStackLayout>
                         </Grid>
                     </Border>
-                </DataTemplate>GG
+                </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
     </Grid>
